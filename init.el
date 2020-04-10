@@ -105,10 +105,6 @@
 (require 'py-autopep8)
 (add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
 
-;;Wind Move enablement
-(when (fboundp 'windmove-default-keybindings)
-  (windmove-default-keybindings))
-
 ;; Make windmove work in Org mode:
 (add-hook 'org-shiftup-final-hook 'windmove-up)
 (add-hook 'org-shiftleft-final-hook 'windmove-left)
